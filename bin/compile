@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../src/bootstrap.php';
+
+use GnuGettext\Compiler;
+
+error_reporting(-1);
+ini_set('display_errors', true);
+
+$compiler = new Compiler();
+$compiler->compile();
